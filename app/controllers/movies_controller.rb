@@ -47,10 +47,6 @@ class MoviesController < ApplicationController
   def update
     @movie = Movie.find(params.fetch(:id))
 
-    # @movie = Movie.find(params.fetch(:id))
-    # the_id = params.fetch(:id)
-    # @movie = Movie.where(id: the_id).first
-
     @movie.title = params.fetch(:title)
     @movie.description = params.fetch(:description)
 
